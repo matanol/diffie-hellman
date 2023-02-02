@@ -10,11 +10,11 @@ const g = 429; // small prime number, should be less than p - 2 //PUBLIC
 const a = 546; // big random number //SECRET
 const b = 358; // big random number //SECRET
 
-const A = getKey(g, a);
-const B = getKey(g, b);
+const A = getKey(g, a); //PUBLIC
+const B = getKey(g, b); //PUBLIC
 
-const AB = getKey(B, a);
-const BA = getKey(A, b);
+const AB = getKey(B, a); //SECRET
+const BA = getKey(A, b); //SECRET
 
 console.log("A public", A.toString(BASE));
 console.log("B public", B.toString(BASE));
